@@ -1,4 +1,4 @@
-package com.fuhu;
+package com.fuhu.flume;
 
 /**
  * Created by yizhao on 6/24/15.
@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 import kafka.serializer.Encoder;
 import kafka.utils.VerifiableProperties;
 
-import com.fuhu.kafka.proto.KafkaProto.KafkaLoggingMessage;
+import com.fuhu.proto.KafkaProto.KafkaLoggingMessage;
 
 public class ProtobufEncoder implements Encoder<Object> {
     private static final Logger LOGGER = Logger

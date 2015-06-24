@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CustomFlumeInterceptors.iml" filepath="$PROJECT_DIR$/CustomFlumeInterceptors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Custom-Flume-Interceptors.iml" filepath="$PROJECT_DIR$/Custom-Flume-Interceptors.iml" />
     </modules>
   </component>
 </project>

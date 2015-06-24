@@ -1,11 +1,11 @@
-package com.fuhu;
+package com.fuhu.flume;
 
 /**
  * Created by yizhao on 6/24/15.
  */
 import org.apache.log4j.Logger;
 
-import com.fuhu.kafka.proto.KafkaProto.KafkaLoggingMessage;
+import com.fuhu.proto.KafkaProto.KafkaLoggingMessage;
 import com.google.protobuf.InvalidProtocolBufferException;
 
 import kafka.serializer.Decoder;

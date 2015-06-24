@@ -1,4 +1,4 @@
-package com.fuhu;
+package com.fuhu.flume;
 
 import org.apache.flume.Context;
 import org.apache.flume.Event;
