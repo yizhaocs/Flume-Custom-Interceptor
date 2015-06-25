@@ -1,5 +1,9 @@
 package com.fuhu.flume;
 
+import com.fuhu.proto.KafkaProto.KafkaLoggingMessage;
+import com.fuhu.proto.TxnPayloadFriendProto.TxnPayloadFriend;
+import com.google.protobuf.ExtensionRegistry;
+import com.google.protobuf.InvalidProtocolBufferException;
 import org.apache.flume.Context;
 import org.apache.flume.Event;
 import org.apache.flume.interceptor.Interceptor;
@@ -7,6 +11,8 @@ import org.apache.flume.interceptor.Interceptor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import static com.fuhu.proto.TxnResponseFriendProto.TxnResponseFriend;
 
 
 /**
@@ -16,6 +22,15 @@ public class CustomInterceptor
         implements Interceptor {
 
     private String moreBody;
+    private static ExtensionRegistry registry;
+
+
+    static {
+        registry = ExtensionRegistry.newInstance();
+        registry.add(TxnPayloadFriend.payload);
+        registry.add(TxnResponseFriend.response);
+    }
+
 
     public CustomInterceptor(String moreBody) {
         this.moreBody = moreBody;
@@ -30,13 +45,20 @@ public class CustomInterceptor
     public Event intercept(Event event) {
 
         // This is the event's body
-        String oldBody = new String(event.getBody());
+
+        KafkaLoggingMessage decodeMessage = null;
+
+        try {
+            decodeMessage = KafkaLoggingMessage.parseFrom(event.getBody(), registry);
+        } catch (InvalidProtocolBufferException e) {
+            e.printStackTrace();
+        }
 
         // These are the event's headers
         Map<String, String> headers = event.getHeaders();
 
 
-        String newBody = moreBody + oldBody;
+        String newBody = moreBody ;
         event.setBody(newBody.getBytes());
 
 

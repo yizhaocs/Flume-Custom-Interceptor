@@ -2636,11 +2636,11 @@ public final class KafkaProto {
     /**
      * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
      */
-    com.fuhu.proto.TxnRequestProto.TxnRequest getTxnrequest();
+    TxnRequestProto.TxnRequest getTxnrequest();
     /**
      * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
      */
-    com.fuhu.proto.TxnRequestProto.TxnRequestOrBuilder getTxnrequestOrBuilder();
+    TxnRequestProto.TxnRequestOrBuilder getTxnrequestOrBuilder();
 
     // optional string request = 2;
     /**
@@ -2721,11 +2721,11 @@ public final class KafkaProto {
               break;
             }
             case 10: {
-              com.fuhu.proto.TxnRequestProto.TxnRequest.Builder subBuilder = null;
+              TxnRequestProto.TxnRequest.Builder subBuilder = null;
               if (((bitField0_ & 0x00000001) == 0x00000001)) {
                 subBuilder = txnrequest_.toBuilder();
               }
-              txnrequest_ = input.readMessage(com.fuhu.proto.TxnRequestProto.TxnRequest.PARSER, extensionRegistry);
+              txnrequest_ = input.readMessage(TxnRequestProto.TxnRequest.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(txnrequest_);
                 txnrequest_ = subBuilder.buildPartial();
@@ -2780,7 +2780,7 @@ public final class KafkaProto {
     private int bitField0_;
     // optional .com.fuhu.proto.TxnRequest txnrequest = 1;
     public static final int TXNREQUEST_FIELD_NUMBER = 1;
-    private com.fuhu.proto.TxnRequestProto.TxnRequest txnrequest_;
+    private TxnRequestProto.TxnRequest txnrequest_;
     /**
      * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
      */
@@ -2790,13 +2790,13 @@ public final class KafkaProto {
     /**
      * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
      */
-    public com.fuhu.proto.TxnRequestProto.TxnRequest getTxnrequest() {
+    public TxnRequestProto.TxnRequest getTxnrequest() {
       return txnrequest_;
     }
     /**
      * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
      */
-    public com.fuhu.proto.TxnRequestProto.TxnRequestOrBuilder getTxnrequestOrBuilder() {
+    public TxnRequestProto.TxnRequestOrBuilder getTxnrequestOrBuilder() {
       return txnrequest_;
     }
 
@@ -2856,7 +2856,7 @@ public final class KafkaProto {
     }
 
     private void initFields() {
-      txnrequest_ = com.fuhu.proto.TxnRequestProto.TxnRequest.getDefaultInstance();
+      txnrequest_ = TxnRequestProto.TxnRequest.getDefaultInstance();
       request_ = "";
     }
     private byte memoizedIsInitialized = -1;
@@ -3018,7 +3018,7 @@ public final class KafkaProto {
       public Builder clear() {
         super.clear();
         if (txnrequestBuilder_ == null) {
-          txnrequest_ = com.fuhu.proto.TxnRequestProto.TxnRequest.getDefaultInstance();
+          txnrequest_ = TxnRequestProto.TxnRequest.getDefaultInstance();
         } else {
           txnrequestBuilder_.clear();
         }
@@ -3123,9 +3123,9 @@ public final class KafkaProto {
       private int bitField0_;
 
       // optional .com.fuhu.proto.TxnRequest txnrequest = 1;
-      private com.fuhu.proto.TxnRequestProto.TxnRequest txnrequest_ = com.fuhu.proto.TxnRequestProto.TxnRequest.getDefaultInstance();
+      private TxnRequestProto.TxnRequest txnrequest_ = TxnRequestProto.TxnRequest.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          com.fuhu.proto.TxnRequestProto.TxnRequest, com.fuhu.proto.TxnRequestProto.TxnRequest.Builder, com.fuhu.proto.TxnRequestProto.TxnRequestOrBuilder> txnrequestBuilder_;
+          TxnRequestProto.TxnRequest, TxnRequestProto.TxnRequest.Builder, TxnRequestProto.TxnRequestOrBuilder> txnrequestBuilder_;
       /**
        * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
        */
@@ -3135,7 +3135,7 @@ public final class KafkaProto {
       /**
        * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
        */
-      public com.fuhu.proto.TxnRequestProto.TxnRequest getTxnrequest() {
+      public TxnRequestProto.TxnRequest getTxnrequest() {
         if (txnrequestBuilder_ == null) {
           return txnrequest_;
         } else {
@@ -3145,7 +3145,7 @@ public final class KafkaProto {
       /**
        * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
        */
-      public Builder setTxnrequest(com.fuhu.proto.TxnRequestProto.TxnRequest value) {
+      public Builder setTxnrequest(TxnRequestProto.TxnRequest value) {
         if (txnrequestBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3162,7 +3162,7 @@ public final class KafkaProto {
        * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
        */
       public Builder setTxnrequest(
-          com.fuhu.proto.TxnRequestProto.TxnRequest.Builder builderForValue) {
+          TxnRequestProto.TxnRequest.Builder builderForValue) {
         if (txnrequestBuilder_ == null) {
           txnrequest_ = builderForValue.build();
           onChanged();
@@ -3175,12 +3175,12 @@ public final class KafkaProto {
       /**
        * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
        */
-      public Builder mergeTxnrequest(com.fuhu.proto.TxnRequestProto.TxnRequest value) {
+      public Builder mergeTxnrequest(TxnRequestProto.TxnRequest value) {
         if (txnrequestBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              txnrequest_ != com.fuhu.proto.TxnRequestProto.TxnRequest.getDefaultInstance()) {
+              txnrequest_ != TxnRequestProto.TxnRequest.getDefaultInstance()) {
             txnrequest_ =
-              com.fuhu.proto.TxnRequestProto.TxnRequest.newBuilder(txnrequest_).mergeFrom(value).buildPartial();
+              TxnRequestProto.TxnRequest.newBuilder(txnrequest_).mergeFrom(value).buildPartial();
           } else {
             txnrequest_ = value;
           }
@@ -3196,7 +3196,7 @@ public final class KafkaProto {
        */
       public Builder clearTxnrequest() {
         if (txnrequestBuilder_ == null) {
-          txnrequest_ = com.fuhu.proto.TxnRequestProto.TxnRequest.getDefaultInstance();
+          txnrequest_ = TxnRequestProto.TxnRequest.getDefaultInstance();
           onChanged();
         } else {
           txnrequestBuilder_.clear();
@@ -3207,7 +3207,7 @@ public final class KafkaProto {
       /**
        * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
        */
-      public com.fuhu.proto.TxnRequestProto.TxnRequest.Builder getTxnrequestBuilder() {
+      public TxnRequestProto.TxnRequest.Builder getTxnrequestBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getTxnrequestFieldBuilder().getBuilder();
@@ -3215,7 +3215,7 @@ public final class KafkaProto {
       /**
        * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
        */
-      public com.fuhu.proto.TxnRequestProto.TxnRequestOrBuilder getTxnrequestOrBuilder() {
+      public TxnRequestProto.TxnRequestOrBuilder getTxnrequestOrBuilder() {
         if (txnrequestBuilder_ != null) {
           return txnrequestBuilder_.getMessageOrBuilder();
         } else {
@@ -3226,11 +3226,11 @@ public final class KafkaProto {
        * <code>optional .com.fuhu.proto.TxnRequest txnrequest = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.fuhu.proto.TxnRequestProto.TxnRequest, com.fuhu.proto.TxnRequestProto.TxnRequest.Builder, com.fuhu.proto.TxnRequestProto.TxnRequestOrBuilder> 
+          TxnRequestProto.TxnRequest, TxnRequestProto.TxnRequest.Builder, TxnRequestProto.TxnRequestOrBuilder>
           getTxnrequestFieldBuilder() {
         if (txnrequestBuilder_ == null) {
           txnrequestBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.fuhu.proto.TxnRequestProto.TxnRequest, com.fuhu.proto.TxnRequestProto.TxnRequest.Builder, com.fuhu.proto.TxnRequestProto.TxnRequestOrBuilder>(
+              TxnRequestProto.TxnRequest, TxnRequestProto.TxnRequest.Builder, TxnRequestProto.TxnRequestOrBuilder>(
                   txnrequest_,
                   getParentForChildren(),
                   isClean());
@@ -3359,11 +3359,11 @@ public final class KafkaProto {
     /**
      * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
      */
-    com.fuhu.proto.TxnResponseProto.TxnResponse getTxnresponse();
+    TxnResponseProto.TxnResponse getTxnresponse();
     /**
      * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
      */
-    com.fuhu.proto.TxnResponseProto.TxnResponseOrBuilder getTxnresponseOrBuilder();
+    TxnResponseProto.TxnResponseOrBuilder getTxnresponseOrBuilder();
 
     // optional string response = 2;
     /**
@@ -3444,11 +3444,11 @@ public final class KafkaProto {
               break;
             }
             case 10: {
-              com.fuhu.proto.TxnResponseProto.TxnResponse.Builder subBuilder = null;
+              TxnResponseProto.TxnResponse.Builder subBuilder = null;
               if (((bitField0_ & 0x00000001) == 0x00000001)) {
                 subBuilder = txnresponse_.toBuilder();
               }
-              txnresponse_ = input.readMessage(com.fuhu.proto.TxnResponseProto.TxnResponse.PARSER, extensionRegistry);
+              txnresponse_ = input.readMessage(TxnResponseProto.TxnResponse.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(txnresponse_);
                 txnresponse_ = subBuilder.buildPartial();
@@ -3503,7 +3503,7 @@ public final class KafkaProto {
     private int bitField0_;
     // optional .com.fuhu.proto.TxnResponse txnresponse = 1;
     public static final int TXNRESPONSE_FIELD_NUMBER = 1;
-    private com.fuhu.proto.TxnResponseProto.TxnResponse txnresponse_;
+    private TxnResponseProto.TxnResponse txnresponse_;
     /**
      * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
      */
@@ -3513,13 +3513,13 @@ public final class KafkaProto {
     /**
      * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
      */
-    public com.fuhu.proto.TxnResponseProto.TxnResponse getTxnresponse() {
+    public TxnResponseProto.TxnResponse getTxnresponse() {
       return txnresponse_;
     }
     /**
      * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
      */
-    public com.fuhu.proto.TxnResponseProto.TxnResponseOrBuilder getTxnresponseOrBuilder() {
+    public TxnResponseProto.TxnResponseOrBuilder getTxnresponseOrBuilder() {
       return txnresponse_;
     }
 
@@ -3579,7 +3579,7 @@ public final class KafkaProto {
     }
 
     private void initFields() {
-      txnresponse_ = com.fuhu.proto.TxnResponseProto.TxnResponse.getDefaultInstance();
+      txnresponse_ = TxnResponseProto.TxnResponse.getDefaultInstance();
       response_ = "";
     }
     private byte memoizedIsInitialized = -1;
@@ -3741,7 +3741,7 @@ public final class KafkaProto {
       public Builder clear() {
         super.clear();
         if (txnresponseBuilder_ == null) {
-          txnresponse_ = com.fuhu.proto.TxnResponseProto.TxnResponse.getDefaultInstance();
+          txnresponse_ = TxnResponseProto.TxnResponse.getDefaultInstance();
         } else {
           txnresponseBuilder_.clear();
         }
@@ -3846,9 +3846,9 @@ public final class KafkaProto {
       private int bitField0_;
 
       // optional .com.fuhu.proto.TxnResponse txnresponse = 1;
-      private com.fuhu.proto.TxnResponseProto.TxnResponse txnresponse_ = com.fuhu.proto.TxnResponseProto.TxnResponse.getDefaultInstance();
+      private TxnResponseProto.TxnResponse txnresponse_ = TxnResponseProto.TxnResponse.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          com.fuhu.proto.TxnResponseProto.TxnResponse, com.fuhu.proto.TxnResponseProto.TxnResponse.Builder, com.fuhu.proto.TxnResponseProto.TxnResponseOrBuilder> txnresponseBuilder_;
+          TxnResponseProto.TxnResponse, TxnResponseProto.TxnResponse.Builder, TxnResponseProto.TxnResponseOrBuilder> txnresponseBuilder_;
       /**
        * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
        */
@@ -3858,7 +3858,7 @@ public final class KafkaProto {
       /**
        * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
        */
-      public com.fuhu.proto.TxnResponseProto.TxnResponse getTxnresponse() {
+      public TxnResponseProto.TxnResponse getTxnresponse() {
         if (txnresponseBuilder_ == null) {
           return txnresponse_;
         } else {
@@ -3868,7 +3868,7 @@ public final class KafkaProto {
       /**
        * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
        */
-      public Builder setTxnresponse(com.fuhu.proto.TxnResponseProto.TxnResponse value) {
+      public Builder setTxnresponse(TxnResponseProto.TxnResponse value) {
         if (txnresponseBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3885,7 +3885,7 @@ public final class KafkaProto {
        * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
        */
       public Builder setTxnresponse(
-          com.fuhu.proto.TxnResponseProto.TxnResponse.Builder builderForValue) {
+          TxnResponseProto.TxnResponse.Builder builderForValue) {
         if (txnresponseBuilder_ == null) {
           txnresponse_ = builderForValue.build();
           onChanged();
@@ -3898,12 +3898,12 @@ public final class KafkaProto {
       /**
        * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
        */
-      public Builder mergeTxnresponse(com.fuhu.proto.TxnResponseProto.TxnResponse value) {
+      public Builder mergeTxnresponse(TxnResponseProto.TxnResponse value) {
         if (txnresponseBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              txnresponse_ != com.fuhu.proto.TxnResponseProto.TxnResponse.getDefaultInstance()) {
+              txnresponse_ != TxnResponseProto.TxnResponse.getDefaultInstance()) {
             txnresponse_ =
-              com.fuhu.proto.TxnResponseProto.TxnResponse.newBuilder(txnresponse_).mergeFrom(value).buildPartial();
+              TxnResponseProto.TxnResponse.newBuilder(txnresponse_).mergeFrom(value).buildPartial();
           } else {
             txnresponse_ = value;
           }
@@ -3919,7 +3919,7 @@ public final class KafkaProto {
        */
       public Builder clearTxnresponse() {
         if (txnresponseBuilder_ == null) {
-          txnresponse_ = com.fuhu.proto.TxnResponseProto.TxnResponse.getDefaultInstance();
+          txnresponse_ = TxnResponseProto.TxnResponse.getDefaultInstance();
           onChanged();
         } else {
           txnresponseBuilder_.clear();
@@ -3930,7 +3930,7 @@ public final class KafkaProto {
       /**
        * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
        */
-      public com.fuhu.proto.TxnResponseProto.TxnResponse.Builder getTxnresponseBuilder() {
+      public TxnResponseProto.TxnResponse.Builder getTxnresponseBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getTxnresponseFieldBuilder().getBuilder();
@@ -3938,7 +3938,7 @@ public final class KafkaProto {
       /**
        * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
        */
-      public com.fuhu.proto.TxnResponseProto.TxnResponseOrBuilder getTxnresponseOrBuilder() {
+      public TxnResponseProto.TxnResponseOrBuilder getTxnresponseOrBuilder() {
         if (txnresponseBuilder_ != null) {
           return txnresponseBuilder_.getMessageOrBuilder();
         } else {
@@ -3949,11 +3949,11 @@ public final class KafkaProto {
        * <code>optional .com.fuhu.proto.TxnResponse txnresponse = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.fuhu.proto.TxnResponseProto.TxnResponse, com.fuhu.proto.TxnResponseProto.TxnResponse.Builder, com.fuhu.proto.TxnResponseProto.TxnResponseOrBuilder> 
+          TxnResponseProto.TxnResponse, TxnResponseProto.TxnResponse.Builder, TxnResponseProto.TxnResponseOrBuilder>
           getTxnresponseFieldBuilder() {
         if (txnresponseBuilder_ == null) {
           txnresponseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.fuhu.proto.TxnResponseProto.TxnResponse, com.fuhu.proto.TxnResponseProto.TxnResponse.Builder, com.fuhu.proto.TxnResponseProto.TxnResponseOrBuilder>(
+              TxnResponseProto.TxnResponse, TxnResponseProto.TxnResponse.Builder, TxnResponseProto.TxnResponseOrBuilder>(
                   txnresponse_,
                   getParentForChildren(),
                   isClean());
@@ -4153,8 +4153,8 @@ public final class KafkaProto {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.fuhu.proto.TxnRequestProto.getDescriptor(),
-          com.fuhu.proto.TxnResponseProto.getDescriptor(),
+          TxnRequestProto.getDescriptor(),
+          TxnResponseProto.getDescriptor(),
         }, assigner);
   }
 
