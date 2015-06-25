@@ -45,7 +45,7 @@ public class CustomInterceptor
     public Event intercept(Event event) {
 
         // This is the event's body
-
+        ProtobufEncoder mProtobufEncoder = new ProtobufEncoder(null);
         KafkaLoggingMessage decodeMessage = null;
 
         try {
@@ -59,7 +59,7 @@ public class CustomInterceptor
 
 
         String newBody = moreBody ;
-        event.setBody(newBody.getBytes());
+        event.setBody(mProtobufEncoder.toBytes(decodeMessage));
 
 
         // Let the enriched event go
